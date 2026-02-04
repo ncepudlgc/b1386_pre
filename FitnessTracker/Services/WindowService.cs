@@ -1,4 +1,4 @@
-// FitnessTracker/Services/WindowService.cs
+﻿// FitnessTracker/Services/WindowService.cs
 using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using FitnessTracker.Views;
@@ -32,22 +32,5 @@ public class WindowService : IWindowService
 
 
         setGoalWindow.ShowDialog();
-    }
-
-    public void ShowFitnessProgressDialog()
-    {
-        var progressWindow = new Window
-        {
-            Title = "Enter Fitness Progress",
-            Content = _serviceProvider.GetRequiredService<Views.FitnessProgress>(),
-            Width = 325,
-            Height = 400,
-            WindowStartupLocation = WindowStartupLocation.CenterOwner,
-            Owner = Application.Current.MainWindow,
-            ResizeMode = ResizeMode.NoResize,
-            WindowStyle = WindowStyle.ToolWindow
-        };
-
-        progressWindow.ShowDialog();
     }
 }
