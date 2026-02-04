@@ -1,0 +1,90 @@
+[
+  {
+    "Id": 1,
+    "Type": "Running",
+    "Value": 1,
+    "Unit": "Miles",
+    "CreatedAt": "2025-07-07T00:27:28.177136Z",
+    "IsActive": false
+  },
+  {
+    "Id": 2,
+    "Type": "Running",
+    "Value": 2,
+    "Unit": "Miles",
+    "CreatedAt": "2025-07-07T00:27:41.5351598Z",
+    "IsActive": false
+  },
+  {
+    "Id": 3,
+    "Type": "Running",
+    "Value": 3,
+    "Unit": "Miles",
+    "CreatedAt": "2025-07-07T00:27:44.295239Z",
+    "IsActive": false
+  },
+  {
+    "Id": 4,
+    "Type": "Running",
+    "Value": 10,
+    "Unit": "Meters",
+    "CreatedAt": "2025-07-07T00:27:49.2803853Z",
+    "IsActive": false
+  },
+  {
+    "Id": 5,
+    "Type": "Water",
+    "Value": 10,
+    "Unit": "Cups",
+    "CreatedAt": "2025-07-07T00:27:55.9446024Z",
+    "IsActive": true
+  },
+  {
+    "Id": 6,
+    "Type": "Running",
+    "Value": 1,
+    "Unit": "Miles",
+    "CreatedAt": "2025-07-07T00:28:40.6132041Z",
+    "IsActive": false
+  },
+  {
+    "Id": 7,
+    "Type": "Running",
+    "Value": 16.0934,
+    "Unit": "Kilometers",
+    "CreatedAt": "2025-07-07T15:08:24.3115933Z",
+    "IsActive": false
+  },
+  {
+    "Id": 8,
+    "Type": "Running",
+    "Value": 1,
+    "Unit": "Miles",
+    "CreatedAt": "2025-07-07T23:56:52.0714358Z",
+    "IsActive": false
+  },
+  {
+    "Id": 9,
+    "Type": "Running",
+    "Value": 8001,
+    "Unit": "Miles",
+    "CreatedAt": "2025-07-08T00:06:48.5640208Z",
+    "IsActive": false
+  },
+  {
+    "Id": 10,
+    "Type": "Running",
+    "Value": 1,
+    "Unit": "Miles",
+    "CreatedAt": "2025-07-08T00:09:05.8229061Z",
+    "IsActive": false
+  },
+  {
+    "Id": 11,
+    "Type": "Running",
+    "Value": 10,
+    "Unit": "Miles",
+    "CreatedAt": "2025-07-08T16:04:37.1064971Z",
+    "IsActive": true
+  }
+]
