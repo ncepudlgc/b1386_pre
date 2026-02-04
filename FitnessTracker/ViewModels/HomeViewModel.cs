@@ -1,4 +1,4 @@
-﻿// FitnessTracker/ViewModels/HomeViewModel.cs
+// FitnessTracker/ViewModels/HomeViewModel.cs
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
@@ -13,16 +13,23 @@ public class HomeViewModel : INotifyPropertyChanged
     private readonly IWindowService _windowService;
     
     public ICommand SetGoalCommand { get; }
+    public ICommand EnterProgressCommand { get; }
     
     public HomeViewModel(IWindowService windowService)
     {
         _windowService = windowService;
         SetGoalCommand = new RelayCommand(ExecuteSetGoal);
+        EnterProgressCommand = new RelayCommand(ExecuteEnterProgress);
     }
     
     private void ExecuteSetGoal()
     {
         _windowService.ShowSetGoalDialog();
+    }
+
+    private void ExecuteEnterProgress()
+    {
+        _windowService.ShowFitnessProgressDialog();
     }
 
 

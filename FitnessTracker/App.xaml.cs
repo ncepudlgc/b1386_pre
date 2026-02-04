@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using FitnessTracker.Repositories;
 using FitnessTracker.Services;
@@ -25,6 +25,9 @@ namespace FitnessTracker
             var goalService = ServiceProvider.GetRequiredService<IGoalService>();
             await goalService.LoadGoalsAsync();     // ← no deadlock
 
+            var progressService = ServiceProvider.GetRequiredService<IFitnessProgressService>();
+            await progressService.LoadProgressAsync();  // ← load fitness progress
+
             ServiceProvider.GetRequiredService<MainWindow>()
                 .Show();
         }
@@ -34,15 +37,19 @@ namespace FitnessTracker
             // Services
             services.AddSingleton<IGoalRepository, GoalRepository>();
             services.AddSingleton<IGoalService,    GoalService>();
+            services.AddSingleton<IFitnessProgressRepository, FitnessProgressRepository>();
+            services.AddSingleton<IFitnessProgressService, FitnessProgressService>();
             services.AddSingleton<IWindowService, WindowService>();
 
             // View-models
             services.AddTransient<SetGoalViewModel>();
+            services.AddTransient<FitnessProgressViewModel>();
             services.AddTransient<HomeViewModel>();
             services.AddTransient<MainViewModel>();
 
             // Views
             services.AddTransient<SetGoal>();
+            services.AddTransient<Views.FitnessProgress>();
             services.AddTransient<Home>();
             services.AddSingleton<MainWindow>(); 
         }
