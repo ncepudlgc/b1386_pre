@@ -100,4 +100,4 @@ This is a fitness app where I need you to add a way for users to enter fitness p
 
 ## PR链接
 
-待创建
+https://github.com/ncepudlgc/b1386_pre/pull/1
